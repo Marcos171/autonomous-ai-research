@@ -1,17 +1,26 @@
-# Autonomous Learning & AI Security System
+# Sistema de Inteligência Artificial Autônoma
 
-This project is dedicated to the research and development of autonomous continuous learning agents and computational automation.
+## 🚀 Visão Geral
+Este projeto implementa uma arquitetura de IA baseada em múltiplos agentes autônomos capazes de planejar, executar código dinâmico, avaliar resultados e aprender de forma contínua.
 
-## Project Goals
-* **Multi-step Agents:** Developing logic for complex planning and autonomous task execution.
-* **Continuous Refinement:** Creating self-improving code cycles based on execution feedback.
-* **Security & Hardening:** Focused research on vulnerability identification and software resilience.
+## 🛠️ Arquitetura do Sistema
+O sistema opera em um ciclo evolutivo composto por:
+- **Agente Autônomo:** Define metas e objetivos de aprendizado.
+- **Orquestrador:** Coordena o fluxo entre planejamento e execução.
+- **Executor:** Roda código Python gerado dinamicamente para testes e tarefas.
+- **Auto-Evoluidor:** Módulo de aprendizado que extrai padrões e atualiza a memória interna.
+- **Busca Web:** Enriquecimento de contexto através de fontes externas.
 
-## Focus Areas
-Our main goal is applied research in Artificial Intelligence, autonomous software systems, and computational security. We aim to provide an architecture that allows community collaboration and joint evolution.
+## 📊 Fluxo de Execução
+```mermaid
+flowchart TD
+A[Agente Autônomo] --> B[Orquestrador]
+B --> C[Busca Web]
+B --> D[Executor]
+D --> E[Crítico]
+E --> F{Aprovado?}
+F -->|Sim| G[Auto-Evoluidor]
+F -->|Não| B
+G --> H[Memória]
+H --> A
 
-## Planned Use for Claude Max
-* Advanced code refactoring and architecture optimization.
-* Generation of deep technical documentation.
-* Researching complex reasoning chains for autonomous agents.
-* 
